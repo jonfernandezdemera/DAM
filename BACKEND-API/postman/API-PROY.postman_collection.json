@@ -1,0 +1,1726 @@
+{
+	"info": {
+		"_postman_id": "9fc47e51-c7d2-4299-9eb8-8f276a2d92df",
+		"name": "API-PROY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27055765"
+	},
+	"item": [
+		{
+			"name": "Broker",
+			"item": [
+				{
+					"name": "Broker by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/id/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"id",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Broker by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/nombre/Broker A",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"nombre",
+								"Broker A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Broker list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Broker",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Broker AAA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cretate or Update Broker",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Broker AAA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivate Broker by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/desactivate/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"desactivate",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Broker by name",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/nombre/Broker AAA",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"nombre",
+								"Broker AAA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "Empresas lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/empresas",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Empresas by simbolo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/empresas/simbolo/EMP1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"simbolo",
+								"EMP1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Empresas by nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/empresas/nombre/Empresa 1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"nombre",
+								"Empresa 1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Empresas by sector",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/empresas/sector/Tecnología",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"sector",
+								"Tecnología"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Empresa by nombre",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"simbolo\": \"EMP1\",\r\n    \"nombre\": \"Empresa 1\",\r\n    \"sector\": \"Tecnologí\",\r\n    \"cotizacion\": 50.0,\r\n    \"divisa\": \"$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/nombre/Empresa 1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"nombre",
+								"Empresa 1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Empresa by simbolo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"simbolo\": \"EMP1\",\r\n    \"nombre\": \"Empresa 1\",\r\n    \"sector\": \"Tecnologí\",\r\n    \"cotizacion\": 50.0,\r\n    \"divisa\": \"$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/simbolo/EMP1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"simbolo",
+								"EMP1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Empresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"simbolo\": \"EMP1\",\r\n    \"nombre\": \"Empresa 11\",\r\n    \"sector\": \"Tecnología\",\r\n    \"cotizacion\": 50.0,\r\n    \"divisa\": \"$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Multiples Empresas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"simbolo\": \"EMP1\",\r\n        \"nombre\": \"Empresa 11\",\r\n        \"sector\": \"Tecnología\",\r\n        \"cotizacion\": 50.0,\r\n        \"divisa\": \"$\",\r\n        \"activo\": true\r\n    },\r\n    {\r\n        \"simbolo\": \"EMP2\",\r\n        \"nombre\": \"Empresa 2\",\r\n        \"sector\": \"Salud\",\r\n        \"cotizacion\": 30.0,\r\n        \"divisa\": \"¥\",\r\n        \"activo\": true\r\n    },\r\n    {\r\n        \"simbolo\": \"EMP3\",\r\n        \"nombre\": \"Empresa 3\",\r\n        \"sector\": \"Finanzas\",\r\n        \"cotizacion\": 70.0,\r\n        \"divisa\": \"R$\",\r\n        \"activo\": true\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/multiplesEmpresas",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"multiplesEmpresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivate Empresa by nombre",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/desactivatedname/Empresa 2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"desactivatedname",
+								"Empresa 2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivate Empresa by simbolo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/empresas/desactivatedsimbolo/EMP2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"empresas",
+								"desactivatedsimbolo",
+								"EMP2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/id/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								"id",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario by email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/email/usuario3@example.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								"email",
+								"usuario3@example.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"email\": \"usuario1@example.com\",\r\n    \"nombre\": \"Usuaria\",\r\n    \"apellidos\": \"Uno\",\r\n    \"edad\": 30,\r\n    \"password\": \"e8+5IcQt7TgnWWrrF9hk+G9Jc/4Orjprnez8l7QpcFU=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario by email",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/usuarios/email/usuario2@example.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"usuarios",
+								"email",
+								"usuario2@example.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos Broker",
+			"item": [
+				{
+					"name": "Moviemientos Broker list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/id/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idusuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idbroker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idbroker/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idbroker",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Date Ascendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/3/ordertype/1/downward/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"3",
+								"ordertype",
+								"1",
+								"downward",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Operation Ascendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/2/ordertype/2/downward/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"2",
+								"ordertype",
+								"2",
+								"downward",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Operation Descendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/2/ordertype/2/downward/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"2",
+								"ordertype",
+								"2",
+								"downward",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Import Descendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/2/ordertype/3/downward/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"2",
+								"ordertype",
+								"3",
+								"downward",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Import Ascendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/2/ordertype/3/downward/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"2",
+								"ordertype",
+								"3",
+								"downward",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario-Date Descendent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/3/ordertype/1/downward/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"3",
+								"ordertype",
+								"1",
+								"downward",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario and operacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/1/operacion/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"1",
+								"operacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario and fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/1/fecha/2023-10-25",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-10-25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker by idUsuario between two dates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/idusuario/3/fecha/2023-10-25/fecha2/2023-10-27",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"idusuario",
+								"3",
+								"fecha",
+								"2023-10-25",
+								"fecha2",
+								"2023-10-27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movmientos Broker Create by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"usuario\": {\r\n            \"id\": 1,\r\n            \"email\": \"usuario1@example.com\",\r\n            \"nombre\": \"Manolo\",\r\n            \"apellidos\": \"Uno\",\r\n            \"edad\": 30,\r\n            \"password\": \"e8+5IcQt7TgnWWrrF9hk+G9Jc/4Orjprnez8l7QpcFU=\"\r\n        },\r\n        \"broker\": {\r\n            \"id\": 1,\r\n            \"nombre\": \"Broker A\"\r\n        },\r\n        \"operacion\": 1,\r\n        \"fecha\": \"2023-10-25\",\r\n        \"importe\": 500.0,\r\n        \"comision\": 10.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/movimientos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Broker create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"usuario\": {\r\n        \"id\": 1,\r\n        \"email\": \"usuario1@example.com\",\r\n        \"nombre\": \"Manolo\",\r\n        \"apellidos\": \"Uno\",\r\n        \"edad\": 30,\r\n        \"password\": \"e8+5IcQt7TgnWWrrF9hk+G9Jc/4Orjprnez8l7QpcFU=\"\r\n    },\r\n    \"broker\": {\r\n        \"id\": 1,\r\n        \"nombre\": \"Broker A\"\r\n    },\r\n    \"operacion\": 1,\r\n    \"fecha\": \"2023-10-25\",\r\n    \"importe\": 500.0,\r\n    \"comision\": 10.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/movimientos/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moviemientos Broker delete by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/movimientos/id/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"movimientos",
+								"id",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivate Broker by name",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/brokers/desactivatedname/Broker C",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"brokers",
+								"desactivatedname",
+								"Broker C"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dividendos",
+			"item": [
+				{
+					"name": "Por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/fecha/2023-09-30",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-09-30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y entre 2 fechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/fecha/2023-09-05/fecha2/2023-09-30",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-09-05",
+								"fecha2",
+								"2023-09-30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y Simbolo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/simbolo/TEF",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"simbolo",
+								"TEF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario, simbolo y fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/simbolo/TEF/fecha/2023-09-30",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"simbolo",
+								"TEF",
+								"fecha",
+								"2023-09-30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario, simbolo y entre 2 fechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/simbolo/TEF/fecha/2023-09-15/fecha2/2023-09-30",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"simbolo",
+								"TEF",
+								"fecha",
+								"2023-09-15",
+								"fecha2",
+								"2023-09-30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dividendos by idUsuario ordered",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/idusuario/1/ordertype/3/downward/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"idusuario",
+								"1",
+								"ordertype",
+								"3",
+								"downward",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete por ID dividendos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/dividendos/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update por ID dividendos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"simbolo\": \"TEF\",\r\n    \"broker\": {\r\n        \"id\": 1\r\n    },\r\n    \"usuario\": {\r\n        \"id\": 1\r\n    },\r\n    \"operacion\": 5,\r\n    \"fecha\": \"2023-09-26\",\r\n    \"precioAccion\": 145,\r\n    \"retencion\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/dividendos/id/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos",
+								"id",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or update dividendos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"simbolo\": \"TEF\",\r\n    \"broker\": {\r\n        \"id\": 1\r\n    },\r\n    \"usuario\": {\r\n        \"id\": 1\r\n    },\r\n    \"operacion\": 5,\r\n    \"fecha\": \"2023-09-26\",\r\n    \"precioAccion\": 135,\r\n    \"retencion\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/dividendos",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"dividendos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transacciones",
+			"item": [
+				{
+					"name": "Por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idtransaccion/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idtransaccion",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/fecha/2023-09-25",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-09-25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y entre 2 fechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/fecha/2023-09-05/fecha2/2023-09-10",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-09-05",
+								"fecha2",
+								"2023-09-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y broker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/idbroker/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"idbroker",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario, broker y entre 2 fechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/fecha/2023-09-05/fecha2/2023-09-10",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"fecha",
+								"2023-09-05",
+								"fecha2",
+								"2023-09-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por usuario y operacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/operacion/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"operacion",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transacciones by idUsuario ordered",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/idusuario/1/ordertype/3/downward/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"idusuario",
+								"1",
+								"ordertype",
+								"3",
+								"downward",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Transaccion por ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,   \r\n  \"broker\": {\r\n    \"id\": 1\r\n  },\r\n  \"usuario\": {\r\n    \"id\": 1\r\n  },\r\n  \"simbolo\": {\r\n    \"simbolo\": \"TEF\"\r\n  },\r\n    \"operacion\": 4,\r\n    \"fecha\": \"2023-09-25\",\r\n    \"numAcciones\": 190,\r\n    \"precioAccion\": 21.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/transacciones/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or update Transaccion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,   \r\n  \"broker\": {\r\n    \"id\": 1\r\n  },\r\n  \"usuario\": {\r\n    \"id\": 1\r\n  },\r\n  \"simbolo\": {\r\n    \"simbolo\": \"TEF\"\r\n  },\r\n    \"operacion\": 4,\r\n    \"fecha\": \"2023-09-25\",\r\n    \"numAcciones\": 150,\r\n    \"precioAccion\": 21.00\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/transacciones",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete por ID transaccion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/transacciones/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"transacciones",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Segumiento",
+			"item": [
+				{
+					"name": "Por usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/seguimiento/idusuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"seguimiento",
+								"idusuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete por idUsuario y simbolo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/seguimiento/simbolo/TEF/idusuario/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"seguimiento",
+								"simbolo",
+								"TEF",
+								"idusuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or update Seguimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"seguimientoId\": {\r\n        \"simbolo\": \"ACX\",\r\n        \"idusuario\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/seguimiento/",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"seguimiento",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
